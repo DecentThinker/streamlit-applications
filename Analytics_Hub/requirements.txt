@@ -1,6 +1,6 @@
 streamlit
-stmol
+stmol==0.0.9
 py3Dmol
-requests
 biotite
-certifi
+ipywidgets
+ipython_genutils
