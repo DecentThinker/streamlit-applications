@@ -3,3 +3,8 @@ numpy
 pandas
 pydeck
 streamlit
+showmol
+py3Dmol
+requests
+biotite.structure.io as bsio
+certifi
