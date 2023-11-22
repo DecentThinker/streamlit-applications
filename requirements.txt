@@ -6,5 +6,5 @@ streamlit
 showmol
 py3Dmol
 requests
-biotite.structure.io as bsio
+biotite
 certifi
