@@ -111,8 +111,8 @@ else:
         # Write CSV data
         df2.to_csv('molecule.smi', sep = '\t', header = False, index = False)
         st.subheader('Initial data from CSV file')
-        st.write(df)
+        st.write(df.values.tolist())
         st.subheader('Formatted as PADEL input file')
-        st.write(df2)
+        st.write(df2.values.tolist())
         with st.spinner("Calculating descriptors..."):
             desc_calc()
