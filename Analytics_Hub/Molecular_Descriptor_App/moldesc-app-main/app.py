@@ -75,7 +75,7 @@ with st.sidebar.header('3. Set parameters'):
     selected_fp = fp_dict[user_fp]
 
     # Set number of molecules to compute
-    df0 = pd.read_csv('acetylcholinesterase_04_bioactivity_data_3class_pIC50.csv')
+    df0 = pd.read_csv('data/acetyl_data.csv')
     all_mol = df0.shape[0]
     number2calc = st.sidebar.slider('How many molecules to compute?', min_value=10, max_value=all_mol, value=10, step=10)
 
