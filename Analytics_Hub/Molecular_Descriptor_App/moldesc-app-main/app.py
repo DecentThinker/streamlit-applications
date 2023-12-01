@@ -75,7 +75,7 @@ with st.sidebar.header('3. Set parameters'):
     selected_fp = fp_dict[user_fp]
 
     # Set number of molecules to compute
-    df0 = pd.read_csv('data/acetyl_data.csv')
+    df0 = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/acetylcholinesterase_04_bioactivity_data_3class_pIC50.csv')
     all_mol = df0.shape[0]
     number2calc = st.sidebar.slider('How many molecules to compute?', min_value=10, max_value=all_mol, value=10, step=10)
 
@@ -104,7 +104,7 @@ else:
         @st.cache
         def load_data():
             # number2calc specifies the number of molecules to compute
-            df = pd.read_csv('data/acetyl_data.csv').iloc[:number2calc,1:]
+            df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/acetylcholinesterase_04_bioactivity_data_3class_pIC50.csv').iloc[:number2calc,1:]
             return df
         df = load_data()
         df2 = pd.concat([df[name_smiles], df[name_mol]], axis=1)
